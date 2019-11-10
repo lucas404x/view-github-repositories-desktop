@@ -12,4 +12,4 @@ class Repositories:
     def get_repositories(repositories):
         print()
         for name, url in repositories:
-            print(f'{name} -> https://github.com/lucas404x{url}')
+            print(f'{name} -> https://github.com{url}')
