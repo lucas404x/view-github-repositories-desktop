@@ -1,4 +1,1 @@
-from controllers.main import main
-
-if __name__ == "__main__":
-    main()
+from controllers.main import *
