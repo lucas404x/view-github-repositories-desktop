@@ -1,4 +1,4 @@
-from controller.main import main
+from controllers.main import main
 
 if __name__ == "__main__":
     main()

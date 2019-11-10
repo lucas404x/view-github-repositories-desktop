@@ -1,7 +1,3 @@
-from selenium import webdriver
-
-import requests
-
 class Github:
 
     def __init__(self, driver, login, password):
@@ -23,4 +19,4 @@ class Github:
         self.driver.find_element_by_name("commit").click()
     
     def html_page(self):
-        return requests.get(self.driver.current_url).content
+        return self.driver.page_source
