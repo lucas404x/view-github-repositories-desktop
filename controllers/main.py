@@ -8,7 +8,7 @@ from time import sleep
 import sys
 import requests
 
-PATH = "/usr/bin/chromedriver" if sys.platform == "linux" else "C:\Windows\chromedriver"
+PATH = "drivers/chromedriver_linux" if sys.platform == "linux" else "drivers\chromedriver_windows"
 options = Options()
 options.add_argument("--headless")
 
