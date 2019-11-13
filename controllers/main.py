@@ -3,9 +3,9 @@ from selenium import webdriver
 from bs4 import BeautifulSoup
 from models.github import Github
 from models.repositories import Repositories
-from time import sleep
 
 import sys
+import getpass
 import requests
 
 PATH = "drivers/chromedriver_linux" if sys.platform == "linux" else "drivers\chromedriver_windows"
@@ -13,7 +13,7 @@ options = Options()
 options.add_argument("--headless")
 
 login = input("Your username or email: ")
-password = input("Your password: ")
+password = getpass.getpass("Your password: ")
 
 driver = webdriver.Chrome(executable_path=PATH, options=options)
 

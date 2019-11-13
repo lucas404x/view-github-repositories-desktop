@@ -13,3 +13,7 @@ class Repositories:
         print()
         for name, url in repositories:
             print(f'{name} -> https://github.com{url}')
+    
+    @staticmethod
+    def clone_repository(repository):
+        pass
