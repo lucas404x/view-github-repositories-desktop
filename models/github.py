@@ -1,4 +1,3 @@
-from selenium.webdriver import Chrome
 from bs4 import BeautifulSoup
 
 class Github:
