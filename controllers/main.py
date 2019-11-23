@@ -10,6 +10,10 @@ import requests
 
 SO = sys.platform
 PATH = "drivers/chromedriver_linux" if SO == "linux" else "drivers\chromedriver_windows"
+
+if SO != "windows":
+    os.chmod(os.path.abspath(PATH), 755)
+
 options = Options()
 options.add_argument("--headless")
 
