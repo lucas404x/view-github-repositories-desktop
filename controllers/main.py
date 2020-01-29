@@ -11,7 +11,7 @@ import requests
 SO = sys.platform
 PATH = "drivers/chromedriver_linux" if SO == "linux" else "drivers\chromedriver_windows"
 
-if SO != "windows":
+if SO == "linux":
     os.chmod(os.path.abspath(PATH), 755)
 
 options = Options()
